@@ -1,15 +1,10 @@
-import * as elasticsearch from '@elastic/elasticsearch';
-import config from './config';
+const {Client} = require('@elastic/elasticsearch');
+const config = require('./config');
 
-const elasticsearchClient = elasticsearch.Client({
-    hosts: [config.elasticsearch_host],
-    log: [{
-        type: 'stdio',
-        levels: ['error']
-    }]
-});
+
+const elasticsearchClient = new Client({node: config.elasticsearch_host});
 
 const createIndex = entity => elasticsearchClient.indices.create(entity);
 const deleteIndex = indexName => elasticsearchClient.indices.delete({index: indexName});
 
-export {createIndex, deleteIndex}
+module.exports = {createIndex, deleteIndex};
