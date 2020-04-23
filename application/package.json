@@ -13,6 +13,7 @@
   },
   "scripts": {
     "sample:create": "node -r esm ./src/sample/createSampleIndex.js",
+    "sample:update": "node -r esm ./src/sample/updateSampleIndex.js",
     "sample:delete": "node -r esm ./src/sample/deleteSampleIndex.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

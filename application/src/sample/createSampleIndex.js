@@ -16,7 +16,8 @@ const getSampleIndexDefinition = () => (
                 }
             }
         }
-    });
+    }
+);
 
 
 createSampleIndex().catch(handleError);
