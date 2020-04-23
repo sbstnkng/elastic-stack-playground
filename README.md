@@ -1,5 +1,5 @@
 # Elastic Stack Playground
-This projects provides a simple setup to run the Elastic stack locally on docker.
+This projects provides a simple setup to run the Elastic Stack locally on docker.
 The setup will create a three node cluster and Kibana.
 
 ## Prerequisites
@@ -13,7 +13,7 @@ or run the script `check-status.sh` from the `scripts` folder.
 3. Open Kibana to load sample data and interact with the cluster: http://localhost:5601
 
 ## Tear down
-Once you are done. You can tear down the containers and volumes by running `docker-componese down -v`.
+Once you are done. You can tear down the containers and volumes by running `docker-compose down -v`.
 
 ## Further informations
 - [Getting started with the Elastic Stack](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html)
