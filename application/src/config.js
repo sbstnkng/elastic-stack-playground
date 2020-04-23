@@ -2,4 +2,4 @@ const config = {
     elasticsearch_host: 'http://localhost:9200'
 };
 
-module.exports = config;
+export default config;

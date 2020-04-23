@@ -1,5 +1,5 @@
-const {Client} = require('@elastic/elasticsearch');
-const config = require('./config');
+import {Client} from '@elastic/elasticsearch';
+import config from './config';
 
 
 const elasticsearchClient = new Client({node: config.elasticsearch_host});
@@ -7,4 +7,4 @@ const elasticsearchClient = new Client({node: config.elasticsearch_host});
 const createIndex = entity => elasticsearchClient.indices.create(entity);
 const deleteIndex = indexName => elasticsearchClient.indices.delete({index: indexName});
 
-module.exports = {createIndex, deleteIndex};
+export {createIndex, deleteIndex};

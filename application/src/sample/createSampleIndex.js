@@ -1,5 +1,5 @@
-const elasticsearchClient = require('../elasticsearchClient');
-const {handleError} = require('../utils/errorHandler');
+import * as elasticsearchClient from '../elasticsearchClient';
+import {handleError} from '../utils/errorHandler';
 
 
 const createSampleIndex = () => elasticsearchClient.createIndex(getSampleIndexDefinition());
