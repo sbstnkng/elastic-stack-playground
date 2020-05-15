@@ -15,10 +15,14 @@
     "sample:create": "node -r esm ./src/sample/createSampleIndex.js",
     "sample:update": "node -r esm ./src/sample/updateSampleIndex.js",
     "sample:delete": "node -r esm ./src/sample/deleteSampleIndex.js",
+    "person:create": "node -r esm ./src/person/createPersonIndex.js",
+    "person:fill": "node -r esm ./src/person/fillPersonIndex.js",
+    "person:delete": "node -r esm ./src/person/deletePersonIndex.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@elastic/elasticsearch": "^7.6.1",
+    "axios": "^0.19.2",
     "esm": "^3.2.25"
   },
   "devDependencies": {
