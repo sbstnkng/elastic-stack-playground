@@ -1,5 +1,5 @@
-import { Client } from "@elastic/elasticsearch";
-import config from "./config";
+import { Client } from '@elastic/elasticsearch';
+import config from './config';
 
 const elasticsearchClient = new Client({ node: config.elasticsearch_host });
 
