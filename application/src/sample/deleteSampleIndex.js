@@ -1,8 +1,6 @@
-import * as elasticsearchClient from '../elasticsearchClient';
-import {handleError} from '../utils/errorHandler';
+import * as elasticsearchClient from "../elasticsearchClient";
+import { handleError } from "../utils/errorHandler";
 
-
-const deleteSampleIndex = () => elasticsearchClient.deleteIndex('sampleindex');
-
+const deleteSampleIndex = () => elasticsearchClient.deleteIndex("sampleindex");
 
 deleteSampleIndex().catch(handleError);
